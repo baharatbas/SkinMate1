@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'loginPage.dart';
+import 'homePage.dart';
 
 class CustomNavBar extends StatefulWidget {
   const CustomNavBar({super.key});
@@ -80,49 +81,6 @@ class _CustomNavBarState extends State<CustomNavBar> {
   }
 }
 
-// Ana Sayfa
-class HomePage extends StatelessWidget {
-  const HomePage({super.key});
-
-  @override
-  Widget build(BuildContext context) {
-    return Scaffold(
-      appBar: AppBar(
-        title: const Text(
-          'SkinMate',
-          style: TextStyle(
-            fontWeight: FontWeight.bold,
-            color: Colors.deepPurple,
-          ),
-        ),
-        backgroundColor: Colors.white,
-        elevation: 0,
-        centerTitle: true,
-      ),
-      body: const Center(
-        child: Column(
-          mainAxisAlignment: MainAxisAlignment.center,
-          children: [
-            Icon(
-              Icons.home,
-              size: 100,
-              color: Colors.deepPurple,
-            ),
-            SizedBox(height: 20),
-            Text(
-              'Ana Sayfa',
-              style: TextStyle(
-                fontSize: 24,
-                fontWeight: FontWeight.bold,
-                color: Colors.deepPurple,
-              ),
-            ),
-          ],
-        ),
-      ),
-    );
-  }
-}
 
 // Arama Sayfası
 class SearchPage extends StatelessWidget {
